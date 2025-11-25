@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexWrap</title>
+</head>
+
+<style>
+
+    .parent{
+        background-color: aquamarine;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+        gap: 30px;
+  
+    }
+    /* 
+
+       flexwrap : allows items to move to the next line when space is limited
+
+       shrink : when in tight space how much an item will shrink is defined by flex-shrink
+                numeric 
+                default : 1
+
+                flex-shrink : 0 ; //the child item does not lose its shape
+                 
+       
+       
+
+       gap :  gap creates a space between flex items 
+              gap triggers the flex-wrap
+       
+       grow : it defines how much a flex item  will grow
+       
+       
+       basis : sets the initial width before growing or shrinking a flexitem
+    */
+
+    .child
+    {
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        border: solid 2px black;
+        text-align: center;
+
+
+        /* flex: grow shrik basis ; */
+
+        flex: 1 0 100px;
+
+        
+
+        /* short hand */
+    }
+
+
+
+</style>
+<body>
+    
+    <div class="parent">
+
+            <div  class="child">
+                Box1
+            </div>
+            
+            <div  class="child">
+                Box2
+            </div>
+            
+            <div  class="child">
+                Box3
+            </div>
+
+    </div>
+
+
+
+    <!-- wrap -->
+
+    <!-- <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi iusto qui praesentium fugiat voluptas porro esse officia cupiditate accusamus optio quaerat, fuga ipsam, facere quam dolorem? Id vero exercitationem harum. Qui inventore sed odit facere alias nam rem voluptatem at provident! Obcaecati omnis vel explicabo veritatis vitae delectus unde reprehenderit, adipisci voluptate veniam dolores neque! Distinctio laboriosam ab, ullam aspernatur optio est ratione, aut reiciendis omnis earum dolores corrupti similique eum aliquam illum! Dolores deserunt cumque tempora atque, doloremque quos provident dolor neque facere quas pariatur totam labore mollitia sunt vel consectetur vitae commodi, a molestias nam culpa nostrum vero accusamus enim! Odio quam eveniet molestiae cum, itaque incidunt maxime voluptas unde rerum fuga nihil autem saepe laborum quidem molestias, numquam inventore debitis. Ratione veniam animi voluptatum consequatur magnam at? Doloribus laborum dolorum velit. Culpa, ut natus et neque accusamus iste, nihil officia, inventore voluptates cum voluptatibus iure. Praesentium mollitia molestias optio asperiores quaerat possimus ea eligendi eveniet, eos vel esse reiciendis voluptas libero blanditiis rem repellat officia fugit sequi error porro alias deserunt? Ab cupiditate alias voluptas blanditiis accusamus vitae, error accusantium hic quisquam. Atque reiciendis ullam, neque tempora distinctio inventore? Molestiae maiores animi nemo hic repellat. Optio!
+    </div> -->
+
+
+</body>
+</html>

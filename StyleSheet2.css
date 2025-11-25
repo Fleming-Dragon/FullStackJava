@@ -1,0 +1,12 @@
+.BoxModel
+{
+    text-align: center;
+    border: 4px solid black ;
+
+    margin: 100px;
+    /* T R B L */
+
+    padding: 50px 100px 50px 100px ;
+    /* T R B L */
+
+}

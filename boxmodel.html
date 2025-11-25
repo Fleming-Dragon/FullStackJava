@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel</title>
+
+    <style>
+
+        .Box{
+
+            /* single value appplies to all : top right botton left */
+            margin: 10px;
+
+            border: solid 2px black; 
+            /* multiple values applies individual in given sequence top right botton left */
+            padding: 10px 5px 10px 5px   ;
+            
+            width: 170px;
+        }
+
+        .Color{
+            background-color: blue;
+        }
+
+        .Display1
+        {
+            display: block ;
+            background-color: aqua;
+            padding: 10px;
+            width: 120px;
+            height: 40px;
+        }
+
+        .Display2
+        {
+            display: inline;
+            background-color:blueviolet;
+            width: 200px;
+            height: 500px;
+        }
+
+        .Display3
+        {
+            display: inline-block;
+            background-color: brown;
+            width: 150px;
+            height: 70px;
+        }
+
+        .Display4{
+
+            display: flex;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="Display1">
+        This is a block element 
+    </div>
+
+    <div class="Display2"> This is another block element</div>
+
+    <div class="Display2"> This is random text </div>
+
+    <div class="Display3">
+        This ia a 3rd Div
+    </div>
+
+    <div class="Display3">
+        This ia a 3rd Div
+    </div>
+
+</body>
+</html>
+
+
+<!-- block tags   inline tags 
+
+div             span 
+p               a
+h1 - h6         button -->
