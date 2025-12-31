@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .parent
+        {
+            background-color: aquamarine;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; 
+            /* wraps items to the next line when there is no space */
+            gap : 80px
+            /* it specifies when to perform wrap */
+            
+        }
+
+        .child
+        {
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            border: 1px solid  black;
+            /* flex-grow: 1;  */
+            /* how much a flex item grows when extra space is available
+            
+            bigger screen bigger item
+              how much the item should relatively grow */
+            /* flex-shrink: 0; */
+            /* how much a flex  iitem shrinks when less space is available */
+
+            /* flex-basis: 50px; */
+            /* what is the initial size to begin growth and shrinking  */
+
+            /* flex : grow shrink basis ; */
+            flex : 1 0 100px;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    
+
+
+        <div class="parent">
+
+            <div  class="child">
+                Box1
+            </div>
+
+            <div class="child">
+                Box2
+            </div>
+
+            <div class="child">
+                Box3
+            </div>
+
+        </div>
+
+
+</body>
+</html>
